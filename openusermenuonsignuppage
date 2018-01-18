@@ -1,0 +1,10 @@
+function show_user_fields()
+{?> <script>
+	jQuery(document).ready(function() {
+		jQuery('#pmpro_user_fields').show();
+		jQuery('#pmpro_user_fields_show').hide();
+	}
+		   
+	);</script><?php 
+}
+add_action('pmpro_checkout_before_submit_button', 'show_user_fields');
